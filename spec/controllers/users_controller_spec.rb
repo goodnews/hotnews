@@ -203,6 +203,8 @@ describe "authentication of edit/update pages" do
         response.should redirect_to(signin_path)
       end
       
+      end
+      
     describe "for signed-in users" do
 
       before(:each) do
@@ -224,3 +226,4 @@ describe "authentication of edit/update pages" do
   end
 
 end
+

@@ -16,7 +16,7 @@ describe "LayoutLinks" do
     get '/about'
     response.should have_selector('title', :content => "About")
   end
-  
+
   it "should have a Help page at '/help'" do
     get '/help'
     response.should have_selector('title', :content => "Help")
@@ -27,7 +27,7 @@ describe "LayoutLinks" do
     response.should have_selector('title', :content => "Sign up")
   end
   
-  describe "when not signed in" do
+describe "when not signed in" do
     it "should have a signin link" do
       visit root_path
       response.should have_selector("a", :href => signin_path,
@@ -56,7 +56,5 @@ describe "LayoutLinks" do
       response.should have_selector("a", :href => user_path(@user),
                                          :content => "Profile")
     end
-  
+  end
 end
-
-
