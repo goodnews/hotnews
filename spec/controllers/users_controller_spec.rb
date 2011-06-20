@@ -286,7 +286,6 @@ it "should show the user's microposts" do
   end
 
     describe "DELETE 'destroy'" do
-
     before(:each) do
       @user = Factory(:user)
     end
@@ -307,9 +306,8 @@ it "should show the user's microposts" do
     end
 
     describe "as an admin user" do
-
       before(:each) do
-        admin = Factory(:user, :email => "admin@example.com", :admin => true)
+        admin = Factory(:user, :email => 'admin@example.com', :admin => true)
         test_sign_in(admin)
       end
 
@@ -326,4 +324,3 @@ it "should show the user's microposts" do
     end
   end
 end
-
