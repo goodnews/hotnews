@@ -54,6 +54,21 @@ class UsersController < ApplicationController
     redirect_to users_path
   end
   
+  def following
+    show_follow(:following)
+  end
+
+  def followers
+    show_follow(:followers)
+  end
+
+  def show_follow(action)
+    @title = action.to_s.capitalize
+    @user = User.find(params[:id])
+    @users = @user.send(action).paginate(:page => params[:page])
+    render 'show_follow'
+  end
+end
   private
 
     def authenticate
@@ -69,4 +84,3 @@ class UsersController < ApplicationController
       redirect_to(root_path) unless current_user.admin?
   end
 
-end
