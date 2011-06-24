@@ -1,13 +1,15 @@
 .container {
-  width: 710px;
+  width: 800px;
 }
 
 body {
-  background: #cff;
+  background-image: url(../images/zeitung.jpg);
+background-attachment: fixed;  
 }
 
 header {
   padding-top: 20px;
+  color: #FFFFFF;
 }
 
 header img {
@@ -16,14 +18,18 @@ header img {
 }
 
 section {
-  margin-top: 1em;
+  margin-top: 2em;
   font-size: 120%;
   padding: 20px;
-  background: #fff;
+ background: #FFFFFF;
 }
 
 section h1 {
+  color: #000000;
   font-size: 200%;
+  
+  font-size: 200%;
+  font-weight: bold;
 }
 
 /* Links */
@@ -45,24 +51,30 @@ a:visited {
 /* Navigation */
 
 nav {
-  float: right;
-}
-
-nav {
   background-color: white;
   padding: 0 0.7em;
   white-space: nowrap;
+  float: center;
+  margin-top: 2em;
+}
+
+nav {
+  padding: 0 0.7em;
+  white-space: nowrap;
+  font-family: times, Times New Roman, times-roman, georgia, serif;
+  text-decoration:none; 
+
 }
 
 nav ul {
   margin: 0;
-  padding: 0;
+  padding: 0; 
 }
 
 nav ul li {
   list-style-type: none;
   display: inline-block;
-  padding: 0.2em 0;
+  padding: 0.2em 0;  
 }
 
 nav ul li a {
@@ -81,16 +93,127 @@ nav ul li a:hover {
 /* Sign up button */
 
 a.signup_button {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+  float: center;
+  
+  display: inline-block;
+  text-align: center;
+  width: 190px;
+  color: #FFFFFF;
+  background: #000000;
+  font-size: 150%;
+  font-weight: bold;
+  padding: 10px;
+  font-family: times, Times New Roman, times-roman, georgia, serif;
+}
+
+/* Round corners */
+
+.round {
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+}
+
+a.signin_button {
+  float: center;
+  
+  display: inline-block;
   text-align: center;
   width: 190px;
   color: #fff;
-  background: #006400;
+  background: #000000;
   font-size: 150%;
   font-weight: bold;
-  padding: 20px;
+  padding: 10px;
+  font-family: times, Times New Roman, times-roman, georgia, serif;
+}
+
+/* Round corners */
+
+.round {
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+}
+
+a.home_button {
+  margin-left: inherit;
+  margin-right: auto;
+  display: inline-block;
+  text-align: center;
+  width: 190px;
+  color: #fff;
+  background: #000000;
+  font-size: 150%;
+  font-weight: bold;
+  padding: 10px;
+  font-family: times, Times New Roman, times-roman, georgia, serif;
+}
+
+/* Round corners */
+
+.round {
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+}
+
+a.about_button {
+  margin-left: inherit;
+  margin-right: auto;
+  display: inline-block;
+  text-align: center;
+  width: 190px;
+  color: #fff;
+  background: #000000;
+  font-size: 150%;
+  font-weight: bold;
+  padding: 10px;
+  font-family: times, Times New Roman, times-roman, georgia, serif;
+}
+
+/* Round corners */
+
+.round {
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+}
+
+a.contact_button {
+  margin-left: inherit;
+  margin-right: auto;
+  display: inline-block;
+  text-align: center;
+  width: 190px;
+  color: #fff;
+  background: #000000;
+  font-size: 150%;
+  font-weight: bold;
+  padding: 10px;
+  font-family: times, Times New Roman, times-roman, georgia, serif;
+}
+
+/* Round corners */
+
+.round {
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+}
+
+a.help_button {
+  margin-left: inherit;
+  margin-right: auto;
+  display: inline-block;
+  text-align: center;
+  width: 190px;
+  color: #fff;
+  background: #000000;
+  font-size: 150%;
+  font-weight: bold;
+  padding: 10px;
+  font-family: times, Times New Roman, times-roman, georgia, serif;
 }
 
 /* Round corners */
@@ -107,6 +230,7 @@ footer {
   width: 710px;
   margin-left: auto;
   margin-right: auto;
+  font-family: times, Times New Roman, times-roman, georgia, serif;
 }
 
 footer nav {
@@ -116,20 +240,23 @@ footer nav {
 /* User show page */
 
 table.profile {
+  background:#FFFFFF;
   width: 100%;
-  margin-bottom: 0;
+  margin-bottom: 0px;
 }
 
 td.main {
+  background:#FFFFFF;
   width: 70%;
   padding: 1em;
 }
 
 td.sidebar {
-  width: 30%;
+
+  width: 10%;
   padding: 1em;
   vertical-align: top;
-  background: #ffc;
+  background: #D6DBD5; 
 }
 
 .profile img.gravatar {
@@ -139,6 +266,7 @@ td.sidebar {
 
 div.field, div.actions {
   margin-bottom: 10px;
+ 
 }
 
 .field_with_errors {
@@ -189,6 +317,7 @@ ul.users {
 .users li {
   list-style: none;
 }
+
 h1.micropost {
   margin-bottom: 0.3em;
 }
@@ -216,7 +345,7 @@ table.microposts tr td.micropost {
 table.microposts tr td.micropost span.timestamp {
   display: block;
   font-size: 85%;
-  color: #666;
+  color: silver;
 }
 
 div.user_info img {
@@ -232,7 +361,7 @@ div.user_info span.user_name {
 }
 
 div.user_info span.microposts {
-  font-size: 80%;
+  font-size: 100%;
 }
 
 form.new_micropost {
@@ -240,6 +369,6 @@ form.new_micropost {
 }
 
 form.new_micropost textarea {
-  height: 4em;
+  height: 6em;
   margin-bottom: 0;
 }

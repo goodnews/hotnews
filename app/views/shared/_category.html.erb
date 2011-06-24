@@ -1,0 +1,8 @@
+<%for category in @categories %>
+  <strong><%=category.name%></strong>
+  <ul>
+    <%for micropost in category.microposts %>
+      <li><%= micropost.content %></li>
+    <%end%>
+  </ul>
+<%end%>

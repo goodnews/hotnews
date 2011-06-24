@@ -12,3 +12,4 @@ end
     drop_table :microposts, :category
   end
 end
+
