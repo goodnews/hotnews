@@ -1,31 +1,33 @@
 .container {
-  width: 800px;
+  width: 900px;
 }
 
 body {
-  background-image: url(../images/zeitung.jpg);
+  background-image: url(../images/bild.jpg);
 background-attachment: fixed;  
 }
 
 header {
   padding-top: 20px;
-  color: #FFFFFF;
+
+
 }
 
 header img {
   padding: 1em;
-  background: #fff;
+ 
 }
 
 section {
-  margin-top: 2em;
+  margin-top: 0em;
   font-size: 120%;
   padding: 20px;
- background: #FFFFFF;
+   
+
 }
 
 section h1 {
-  color: #000000;
+  color: #FFFFFF;
   font-size: 200%;
   
   font-size: 200%;
@@ -51,11 +53,12 @@ a:visited {
 /* Navigation */
 
 nav {
-  background-color: white;
+  
   padding: 0 0.7em;
-  white-space: nowrap;
+
   float: center;
   margin-top: 2em;
+  
 }
 
 nav {
@@ -83,11 +86,12 @@ nav ul li a {
 }
 
 nav ul li a:visited {
-  color: #09c;
+  color: #FFFFFF;
 }
 
 nav ul li a:hover {
   text-decoration: underline;
+  color: #00FF7F;
 }
 
 /* Sign up button */
@@ -246,17 +250,19 @@ table.profile {
 }
 
 td.main {
-  background:#FFFFFF;
-  width: 70%;
+  background-image: url(../images/wall.jpg);
+  
+  width: 100%;
   padding: 1em;
 }
 
 td.sidebar {
 
-  width: 10%;
+  width: 20%;
   padding: 1em;
   vertical-align: top;
-  background: #D6DBD5; 
+
+   background: #FFFFFF;
 }
 
 .profile img.gravatar {
@@ -265,8 +271,8 @@ td.sidebar {
 }
 
 div.field, div.actions {
-  margin-bottom: 10px;
- 
+  margin-bottom: 30px;
+ color: #FFFFFF;
 }
 
 .field_with_errors {
@@ -324,6 +330,7 @@ h1.micropost {
 
 table.microposts {
   margin-top: 1em;
+ 
 }
 
 table.microposts tr {
@@ -369,6 +376,7 @@ form.new_micropost {
 }
 
 form.new_micropost textarea {
-  height: 6em;
+  height: 8em;
+  font-size: 150%;
   margin-bottom: 0;
 }
