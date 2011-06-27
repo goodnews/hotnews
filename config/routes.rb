@@ -15,7 +15,8 @@ end
   resources :sessions, :only => [:new, :create, :destroy]
   resources :microposts, :only => [:create, :destroy, :vote_up]
   resources :relationships, :only => [:create, :destroy]
-
+  resources :image, :only => [:create, :destroy]
+  
  #get "pages/home"
 
   #get "pages/contact"

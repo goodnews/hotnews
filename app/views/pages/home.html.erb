@@ -2,7 +2,7 @@
   <table class="front" summary="For signed-in users">
     <tr>
       <td class="main">
-        <h1 class="micropost">What's up?</h1>
+        <h1 class="micropost">Teil die neuesten Meldungen!</h1>
         <%= render 'shared/micropost_form' %>
          <%= render 'shared/feed' %>
       </td>
@@ -14,7 +14,7 @@
   </table>
 <% else %>
   <div align= center>
-  <p><%= link_to "Sign up now!", signup_path, :class => "signup_button round" %></p>
+  <p><%= link_to "Registrieren", signup_path, :class => "Registrieren_button round" %></p>
   <p><%= link_to "Sign in", signin_path, :class => "signin_button round" %></p>
   <p><%= link_to "About", about_path, :class => "about_button round" %></p>
   <p><%= link_to "Contact", contact_path, :class => "contact_button round" %></p>

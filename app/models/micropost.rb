@@ -5,6 +5,14 @@ class Micropost < ActiveRecord::Base
 
   validates :content, :presence => true, :length => { :maximum => 140 }
   validates :user_id, :presence => true
+  
+  has_attached_file :image,
+  :styles => {
+    :thumb=> "100x100#",
+    :small  => "150x150>",
+    :medium => "300x300>",
+    :large =>   "400x400>" }
+  
 
 default_scope :order => 'microposts.created_at DESC'
 
