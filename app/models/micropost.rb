@@ -1,6 +1,6 @@
 class Micropost < ActiveRecord::Base
   attr_accessible :content
-  
+  acts_as_voteable
   belongs_to :user
 
   validates :content, :presence => true, :length => { :maximum => 140 }

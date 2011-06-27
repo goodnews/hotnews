@@ -3,11 +3,17 @@ resources :users do
     member do
       get :following, :followers
     end
+end
+
+resources :microposts do
+  member do
+    post :vote_up
   end
+end
 
  # get "sessions/new"
   resources :sessions, :only => [:new, :create, :destroy]
-  resources :microposts, :only => [:create, :destroy]
+  resources :microposts, :only => [:create, :destroy, :vote_up]
   resources :relationships, :only => [:create, :destroy]
 
  #get "pages/home"
