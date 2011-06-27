@@ -19,7 +19,7 @@ class MicropostsController < ApplicationController
   end
 
   def show
-    @micropost = Micropost.find(params[:id])
+    @micropost = Micropost.find(params[:id], :include => :images)
     @user = User.find(@micropost.user_id)
   end
 
